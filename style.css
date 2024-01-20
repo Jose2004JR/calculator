@@ -1,0 +1,72 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #21222c 50%, #fabf00 50%);
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#calculator{
+    width: 300px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 19px;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+#resultDiv{
+    width: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+#resultDiv input{
+    width: 200px;
+    position: relative;
+    padding: 9px;
+    border: 1px solid gainsboro;
+    border-radius: 9px;
+}
+#resultDiv span{
+    position: absolute;
+    left: 70%;
+    cursor: pointer;
+    color: #50fa7b;
+}
+#buttonsCalculator{
+    height: 80%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#buttonsCalculator div{
+    display: flex;
+    gap: 12px;
+}
+#buttonsCalculator button{
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background-color:#0275d8;
+    box-sizing: border-box;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+    transition: ease-in 0.3s;
+}
+#buttonsCalculator button:hover{
+    transform: scale(1.2);
+}
