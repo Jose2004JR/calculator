@@ -24,8 +24,15 @@ function calculate(){
 copy.addEventListener("click",()=>{
     navigator.clipboard.writeText(input.value);
 
-    let copyWord = copy.innerText == "copy" ? "copied" : "copy"
+    if(copy.innerText == "copy"){
+        copy.innerText = "copied";
+        copy.style.color = " black";
+        input.style.borderColor = "black";
+    }else if(copy.innerText == "copied"){
+        copy.innerText = "copy";
+        copy.style.color = "green";
+        input.style.borderColor = "green"
 
-    copy.innerText = copyWord
-    
+    }
+
 })
